@@ -13,10 +13,12 @@ function toggleButton() {
     if (buttonState) {
         buttonText.innerText="BUTTON ON";
         button.classList.add("changebutton");
-        circle.classList.add("changecircle");
+        circle.id="heart";
+        //alternatively we could change the style of the elements diretly like this:
+        //button.style.backgroundColor="blue"; 
     } else {
         buttonText.innerText="BUTTON OFF";
         button.classList.remove("changebutton");
-        circle.classList.remove("changecircle");
+        circle.id="circle";
     }
 }

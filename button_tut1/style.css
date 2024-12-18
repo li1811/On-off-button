@@ -16,9 +16,11 @@ button {
 
 #circle {
     background-color: black;
-    width: 300px;
-    height: 300px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .changebutton {
@@ -26,6 +28,27 @@ button {
     color:black;
 }
 
-.changecircle {
-    background-color: blueviolet !important;
+#heart { 
+    position: relative; 
+    width: 100px; 
+    height: 90px; 
+} 
+
+#heart:before, #heart:after { 
+    position: absolute; 
+    content: ""; 
+    left: 150px; 
+    top: 30px; 
+    width: 150px; 
+    height: 240px; 
+    background: red; 
+    border-radius: 150px 150px 0 0; 
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%; 
+} 
+
+#heart:after { 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin :100% 100%; 
 }
